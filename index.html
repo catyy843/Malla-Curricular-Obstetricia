@@ -1,62 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Malla Interactiva con Desbloqueo</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px 40px;
-    background: #f9f9f9;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #004080;
-  }
-  section.semestre {
-    background: white;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
-  }
-  section.semestre h2 {
-    border-bottom: 2px solid #004080;
-    padding-bottom: 6px;
-    margin-bottom: 15px;
-  }
-  ul.materias {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  ul.materias li {
-    margin-bottom: 10px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border-left: 5px solid #004080;
-    background-color: #e0f0ff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  ul.materias li.bloqueada {
-    background-color: #ccc;
-    border-color: #999;
-    color: #666;
-    cursor: not-allowed;
-    opacity: 0.6;
-  }
-  ul.materias li.activa:hover {
-    background-color: #a0d1ff;
-  }
-  span.abre {
-    font-style: italic;
-    color: #0066cc;
-    margin-left: 8px;
-    font-weight: 600;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Interactiva Enfermería</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -65,98 +13,122 @@
 <section class="semestre" id="semestre1">
   <h2>I Semestre</h2>
   <ul class="materias">
-    <li class="activa" data-nombre="Fundamentos de Enfermería I" data-abre="Integración al Desempeño Profesional I">
-      Fundamentos de Enfermería I <span class="abre">(Abre Integración al Desempeño Profesional I)</span>
-    </li>
-    <li class="activa" data-nombre="Química General y Orgánica" data-abre="Bioquímica">
-      Química General y Orgánica <span class="abre">(Abre Bioquímica)</span>
-    </li>
-    <li class="activa" data-nombre="Biología Celular y Genética" data-abre="Histología; Anatomía; Fisiología General; Biología del Desarrollo y Embriología Humana; Bioquímica">
-      Biología Celular y Genética <span class="abre">(Abre Histología; Anatomía; Fisiología General; Biología del Desarrollo y Embriología Humana; Bioquímica)</span>
-    </li>
-    <li class="activa" data-nombre="Matemáticas" data-abre="Investigación en Salud I">
-      Matemáticas <span class="abre">(Abre Investigación en Salud I)</span>
-    </li>
-    <li class="activa" data-nombre="Física" data-abre="Fisiología General; Investigación en Salud I">
-      Física <span class="abre">(Abre Fisiología General; Investigación en Salud I)</span>
-    </li>
-    <li class="activa" data-nombre="Ciencias Sociales y Salud I" data-abre="Ciencias Sociales y Salud II">
-      Ciencias Sociales y Salud I <span class="abre">(Abre Ciencias Sociales y Salud II)</span>
-    </li>
-    <li class="activa" data-nombre="Educación en Salud I" data-abre="Educación en Salud II; Clínica de Salud Comunitaria">
-      Educación en Salud I <span class="abre">(Abre Educación en Salud II; Clínica de Salud Comunitaria)</span>
-    </li>
-    <li class="activa" data-nombre="Inglés I" data-abre="Inglés II">
-      Inglés I <span class="abre">(Abre Inglés II)</span>
-    </li>
+    <li class="activa" data-nombre="Fundamentos de Enfermería I" data-abre="Integración al Desempeño Profesional I">Fundamentos de Enfermería I <span class="abre">(Abre Integración al Desempeño Profesional I)</span></li>
+    <li class="activa" data-nombre="Química General y Orgánica" data-abre="Bioquímica">Química General y Orgánica <span class="abre">(Abre Bioquímica)</span></li>
+    <li class="activa" data-nombre="Biología Celular y Genética" data-abre="Histología; Anatomía; Fisiología General; Biología del Desarrollo y Embriología Humana; Bioquímica">Biología Celular y Genética <span class="abre">(Abre Histología; Anatomía; Fisiología General; Biología del Desarrollo y Embriología Humana; Bioquímica)</span></li>
+    <li class="activa" data-nombre="Matemáticas" data-abre="Investigación en Salud I">Matemáticas <span class="abre">(Abre Investigación en Salud I)</span></li>
+    <li class="activa" data-nombre="Física" data-abre="Fisiología General; Investigación en Salud I">Física <span class="abre">(Abre Fisiología General; Investigación en Salud I)</span></li>
+    <li class="activa" data-nombre="Ciencias Sociales y Salud I" data-abre="Ciencias Sociales y Salud II">Ciencias Sociales y Salud I <span class="abre">(Abre Ciencias Sociales y Salud II)</span></li>
+    <li class="activa" data-nombre="Educación en Salud I" data-abre="Educación en Salud II; Clínica de Salud Comunitaria">Educación en Salud I <span class="abre">(Abre Educación en Salud II; Clínica de Salud Comunitaria)</span></li>
+    <li class="activa" data-nombre="Inglés I" data-abre="Inglés II">Inglés I <span class="abre">(Abre Inglés II)</span></li>
   </ul>
 </section>
 
 <section class="semestre" id="semestre2">
   <h2>II Semestre</h2>
   <ul class="materias">
-    <li class="bloqueada" data-nombre="Salud Comunitaria I" data-abre="Salud Comunitaria II; Clínica de Salud Comunitaria">
-      Salud Comunitaria I <span class="abre">(Abre Salud Comunitaria II; Clínica de Salud Comunitaria)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Integración al Desempeño Profesional I" data-abre="Neonatología I">
-      Integración al Desempeño Profesional I <span class="abre">(Abre Neonatología I)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Bioquímica" data-abre="Farmacología">
-      Bioquímica <span class="abre">(Abre Farmacología)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Biología del Desarrollo y Embriología Humana" data-abre="Obstetricia Fisiológica I">
-      Biología del Desarrollo y Embriología Humana <span class="abre">(Abre Obstetricia Fisiológica I)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Fisiología General" data-abre="Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Fisiología de Sistemas; Obstetricia Fisiológica I; Inmunología">
-      Fisiología General <span class="abre">(Abre Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Fisiología de Sistemas; Obstetricia Fisiológica I; Inmunología)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Anatomía" data-abre="Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I">
-      Anatomía <span class="abre">(Abre Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Histología" data-abre="Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I">
-      Histología <span class="abre">(Abre Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I)</span>
-    </li>
-    <li class="bloqueada" data-nombre="Inglés II" data-abre="Inglés III">
-      Inglés II <span class="abre">(Abre Inglés III)</span>
-    </li>
+    <li class="bloqueada" data-nombre="Salud Comunitaria I" data-abre="Salud Comunitaria II; Clínica de Salud Comunitaria">Salud Comunitaria I <span class="abre">(Abre Salud Comunitaria II; Clínica de Salud Comunitaria)</span></li>
+    <li class="bloqueada" data-nombre="Integración al Desempeño Profesional I" data-abre="Neonatología I">Integración al Desempeño Profesional I <span class="abre">(Abre Neonatología I)</span></li>
+    <li class="bloqueada" data-nombre="Bioquímica" data-abre="Farmacología">Bioquímica <span class="abre">(Abre Farmacología)</span></li>
+    <li class="bloqueada" data-nombre="Biología del Desarrollo y Embriología Humana" data-abre="Obstetricia Fisiológica I">Biología del Desarrollo y Embriología Humana <span class="abre">(Abre Obstetricia Fisiológica I)</span></li>
+    <li class="bloqueada" data-nombre="Fisiología General" data-abre="Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Fisiología de Sistemas; Obstetricia Fisiológica I; Inmunología">Fisiología General <span class="abre">(Abre Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Fisiología de Sistemas; Obstetricia Fisiológica I; Inmunología)</span></li>
+    <li class="bloqueada" data-nombre="Anatomía" data-abre="Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I">Anatomía <span class="abre">(Abre Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I)</span></li>
+    <li class="bloqueada" data-nombre="Histología" data-abre="Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I">Histología <span class="abre">(Abre Ginecología Fisiológica; Fundamentos de Enfermería II; Agentes Vivos de Enfermedad; Neonatología I; Obstetricia Fisiológica I)</span></li>
+    <li class="bloqueada" data-nombre="Inglés II" data-abre="Inglés III">Inglés II <span class="abre">(Abre Inglés III)</span></li>
   </ul>
 </section>
 
-<!-- Puedes seguir agregando más semestres con el mismo formato -->
+<section class="semestre" id="semestre3">
+  <h2>III Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Fundamentos de Enfermería II" data-abre="Integración del Desempeño Profesional II">Fundamentos de Enfermería II <span class="abre">(Abre Integración del Desempeño Profesional II)</span></li>
+    <li class="bloqueada" data-nombre="Obstetricia Fisiológica I" data-abre="Obstetricia Fisiológica II">Obstetricia Fisiológica I <span class="abre">(Abre Obstetricia Fisiológica II)</span></li>
+    <li class="bloqueada" data-nombre="Neonatología I" data-abre="Neonatología I">Neonatología I <span class="abre">(Abre Neonatología I)</span></li>
+    <li class="bloqueada" data-nombre="Fisiología de Sistemas" data-abre="Ginecología Fisiológica; Integración Desempeño Profesional II; Neonatología II; Fisiopatología; Reproducción Humana; Farmacología; Obstetricia Fisiológica II">Fisiología de Sistemas <span class="abre">(Abre Ginecología Fisiológica; Integración Desempeño Profesional II; Neonatología II; Fisiopatología; Reproducción Humana; Farmacología; Obstetricia Fisiológica II)</span></li>
+    <li class="bloqueada" data-nombre="Inmunología" data-abre="">Inmunología <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Agentes Vivos de Enfermedad" data-abre="Infectología; Neonatología II">Agentes Vivos de Enfermedad <span class="abre">(Abre Infectología; Neonatología II)</span></li>
+    <li class="bloqueada" data-nombre="Ciencias Sociales y Salud II" data-abre="Ciencias Sociales y Salud III">Ciencias Sociales y Salud II <span class="abre">(Abre Ciencias Sociales y Salud III)</span></li>
+    <li class="bloqueada" data-nombre="Inglés III" data-abre="Inglés IV">Inglés III <span class="abre">(Abre Inglés IV)</span></li>
+  </ul>
+</section>
 
-<script>
-  // Función para limpiar texto y comparar
-  function limpiarTexto(texto) {
-    return texto.trim().toLowerCase();
-  }
+<section class="semestre" id="semestre4">
+  <h2>IV Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Neonatología II" data-abre="Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica">Neonatología II <span class="abre">(Abre Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica)</span></li>
+    <li class="bloqueada" data-nombre="Ginecología Fisiológica" data-abre="Clínica de Atención Primaria I">Ginecología Fisiológica <span class="abre">(Abre Clínica de Atención Primaria I)</span></li>
+    <li class="bloqueada" data-nombre="Obstetricia Fisiológica II" data-abre="Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica">Obstetricia Fisiológica II <span class="abre">(Abre Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica)</span></li>
+    <li class="bloqueada" data-nombre="Integración Desempeño Profesional II" data-abre="Clínica de Salud Comunitaria; Clínica Neonatal; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio">Integración Desempeño Profesional II <span class="abre">(Abre Clínica de Salud Comunitaria; Clínica Neonatal; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio)</span></li>
+    <li class="bloqueada" data-nombre="Infectología" data-abre="Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio">Infectología <span class="abre">(Abre Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio)</span></li>
+    <li class="bloqueada" data-nombre="Fisiopatología" data-abre="Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica">Fisiopatología <span class="abre">(Abre Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica)</span></li>
+    <li class="bloqueada" data-nombre="Farmacología" data-abre="Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica">Farmacología <span class="abre">(Abre Clínica Neonatal I; Clínica de Atención Primaria I; Clínica de Partos I; Clínica de Puerperio; Neonatología III; Obstetricia Patológica)</span></li>
+    <li class="bloqueada" data-nombre="Investigación en Salud I" data-abre="Gestión y Liderazgo en Salud I; Investigación en Salud II">Investigación en Salud I <span class="abre">(Abre Gestión y Liderazgo en Salud I; Investigación en Salud II)</span></li>
+  </ul>
+</section>
 
-  // Al hacer click en una materia desbloqueada
-  document.querySelectorAll('li.activa').forEach(li => {
-    li.addEventListener('click', () => {
-      const abreRaw = li.dataset.abre;
-      if (!abreRaw) return;
+<section class="semestre" id="semestre5">
+  <h2>V Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Clínica Neonatal I" data-abre="">Clínica Neonatal I <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Partos I" data-abre="">Clínica de Partos I <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Atención Primaria I" data-abre="Ginecología Patológica">Clínica de Atención Primaria I <span class="abre">(Abre Ginecología Patológica)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Puerperio" data-abre="">Clínica de Puerperio <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Salud Comunitaria" data-abre="">Clínica de Salud Comunitaria <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Módulo Integrado Interdisciplinario Multiprofesional I" data-abre="Módulo Integrado Interdisciplinario Multiprofesional II">Módulo Integrado Interdisciplinario Multiprofesional I <span class="abre">(Abre Módulo Integrado Interdisciplinario Multiprofesional II)</span></li>
+  </ul>
+</section>
 
-      // Obtengo lista de materias que desbloquea
-      const materiasQueAbre = abreRaw.split(';').map(s => limpiarTexto(s));
+<section class="semestre" id="semestre6">
+  <h2>VI Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Neonatología III" data-abre="Clínica Neonatal II; Enfermería Médico Quirúrgica">Neonatología III <span class="abre">(Abre Clínica Neonatal II; Enfermería Médico Quirúrgica)</span></li>
+    <li class="bloqueada" data-nombre="Obstetricia Patológica" data-abre="Clínica de Atención Primaria II; Enfermería Médico Quirúrgica; Clínica de Alto Riesgo Obstétrico">Obstetricia Patológica <span class="abre">(Abre Clínica de Atención Primaria II; Enfermería Médico Quirúrgica; Clínica de Alto Riesgo Obstétrico)</span></li>
+    <li class="bloqueada" data-nombre="Salud Comunitaria II" data-abre="Clínica de Atención Primaria II">Salud Comunitaria II <span class="abre">(Abre Clínica de Atención Primaria II)</span></li>
+    <li class="bloqueada" data-nombre="Educación en Salud II" data-abre="">Educación en Salud II <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Gestión y Liderazgo en Salud I" data-abre="Gestión y Liderazgo en Salud II">Gestión y Liderazgo en Salud I <span class="abre">(Abre Gestión y Liderazgo en Salud II)</span></li>
+    <li class="bloqueada" data-nombre="Investigación en Salud II" data-abre="Investigación en Salud III">Investigación en Salud II <span class="abre">(Abre Investigación en Salud III)</span></li>
+    <li class="bloqueada" data-nombre="Ciencias Sociales y Salud III" data-abre="Ciencias Sociales IV">Ciencias Sociales y Salud III <span class="abre">(Abre Ciencias Sociales IV)</span></li>
+  </ul>
+</section>
 
-      materiasQueAbre.forEach(nombreMateria => {
-        // Busco todos los <li> que tengan data-nombre igual (ignorando mayúsculas)
-        document.querySelectorAll('li').forEach(mat => {
-          if (limpiarTexto(mat.dataset.nombre) === nombreMateria) {
-            if (mat.classList.contains('bloqueada')) {
-              mat.classList.remove('bloqueada');
-              mat.classList.add('activa');
-              // Le agrego listener para que también pueda desbloquear otras materias
-              mat.addEventListener('click', () => {
-                mat.click();
-              }, { once: true });
-            }
-          }
-        });
-      });
-    });
-  });
-</script>
+<section class="semestre" id="semestre7">
+  <h2>VII Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Enfermería Médico Quirúrgica" data-abre="Clínica de Enfermería Médico Quirúrgica; Clínica Neonatal II; Clínica de Partos II; Clínica de Alto Riesgo Obstétrico">Enfermería Médico Quirúrgica <span class="abre">(Abre Clínica de Enfermería Médico Quirúrgica; Clínica Neonatal II; Clínica de Partos II; Clínica de Alto Riesgo Obstétrico)</span></li>
+    <li class="bloqueada" data-nombre="Reproducción Humana" data-abre="">Reproducción Humana <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Ginecología Patológica" data-abre="Clínica de Atención Primaria II; Clínica de Enfermería Médico Quirúrgica">Ginecología Patológica <span class="abre">(Abre Clínica de Atención Primaria II; Clínica de Enfermería Médico Quirúrgica)</span></li>
+    <li class="bloqueada" data-nombre="Gestión y Liderazgo en Salud II" data-abre="">Gestión y Liderazgo en Salud II <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Inglés IV" data-abre="">Inglés IV <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Investigación en Salud III" data-abre="Seminario Unidad de Investigación I">Investigación en Salud III <span class="abre">(Abre Seminario Unidad de Investigación I)</span></li>
+    <li class="bloqueada" data-nombre="Ciencias Sociales y Salud IV" data-abre="">Ciencias Sociales y Salud IV <span class="abre">(No Abre Nada)</span></li>
+  </ul>
+</section>
 
+<section class="semestre" id="semestre8">
+  <h2>VIII Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Clínica Neonatal II" data-abre="Internado Neonatología">Clínica Neonatal II <span class="abre">(Abre Internado Neonatología)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Partos II" data-abre="Internado Obstetricia">Clínica de Partos II <span class="abre">(Abre Internado Obstetricia)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Atención Primaria II" data-abre="Internado Atención Primaria">Clínica de Atención Primaria II <span class="abre">(Abre Internado Atención Primaria)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Alto Riesgo Obstétrico" data-abre="Internado Obstetricia">Clínica de Alto Riesgo Obstétrico <span class="abre">(Abre Internado Obstetricia)</span></li>
+    <li class="bloqueada" data-nombre="Clínica de Enfermería Médico Quirúrgica" data-abre="Internado Ginecología">Clínica de Enfermería Médico Quirúrgica <span class="abre">(Abre Internado Ginecología)</span></li>
+    <li class="bloqueada" data-nombre="Módulo Integrado Interdisciplinario Multiprofesional II" data-abre="">Módulo Integrado Interdisciplinario Multiprofesional II <span class="abre">(No Abre Nada)</span></li>
+  </ul>
+</section>
+
+<section class="semestre" id="semestre9y10">
+  <h2>IX y X Semestre</h2>
+  <ul class="materias">
+    <li class="bloqueada" data-nombre="Internado de Neonatología" data-abre="">Internado de Neonatología <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Internado Obstetricia" data-abre="">Internado Obstetricia <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Internado Atención Primaria" data-abre="">Internado Atención Primaria <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Internado Ginecología" data-abre="">Internado Ginecología <span class="abre">(No Abre Nada)</span></li>
+    <li class="bloqueada" data-nombre="Internado Electivo" data-abre="Abada">Internado Electivo <span class="abre">(No Abre Abada)</span></li>
+    <li class="bloqueada" data-nombre="Seminario Unidad de Investigación I" data-abre="Seminario Unidad de Investigación II">Seminario Unidad de Investigación I <span class="abre">(Abre Seminario Unidad de Investigación II)</span></li>
+    <li class="bloqueada" data-nombre="Seminario Unidad de Investigación II" data-abre="">Seminario Unidad de Investigación II <span class="abre">(No Abre Nada)</span></li>
+  </ul>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
