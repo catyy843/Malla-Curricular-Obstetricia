@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  font-family: 'Patrick Hand', cursive, sans-serif;
+  margin: 20px 30px;
+  background: #f9f5f6; /* fondo muy suave rosado grisáceo */
+  color: #5b2c2c; /* burdeos oscuro */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #7a3e3e; /* burdeos medio */
+  font-size: 2.8rem;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 2px #b96b6b;
+}
+
+body > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 10px;
+}
+
+section.semestre {
+  background: #f2e8e8; /* burdeos muy claro / rosa pálido */
+  border: 2.5px dashed #a05151; /* borde burdeos medio */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 10px rgb(160 81 81 / 0.35);
+  transition: transform 0.3s ease;
+}
+
+section.semestre:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 20px rgb(160 81 81 / 0.55);
+}
+
+section.semestre h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: #8c4040; /* burdeos medio */
+  text-align: center;
+  border-bottom: 2px solid #d79a9a; /* rojo suave */
+  padding-bottom: 6px;
+}
+
+ul.materias {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+ul.materias li {
+  background: #f7e9e9; /* rojo muy suave */
+  border: 2px solid #a15050; /* burdeos */
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: #6a3a3a; /* burdeos oscuro */
+  font-weight: 600;
+  box-shadow: 3px 3px 0 #8b3f3f;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+ul.materias li.activa:hover {
+  background: #ebd3d3; /* rojo más claro para hover */
+  box-shadow: 4px 4px 0 #7b3a3a;
+  color: #4e2a2a;
+}
+
+ul.materias li.bloqueada {
+  background-color: #e6dada; /* gris rosado */
+  border-color: #b29b9b;
+  color: #9e8b8b;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+span.abre {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #a05a5a; /* rojo suave */
+  letter-spacing: 0.8px;
+  user-select: text;
+}
