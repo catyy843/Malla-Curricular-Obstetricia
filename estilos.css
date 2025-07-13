@@ -1,94 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/*Arial*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 body {
-  font-family: 'Patrick Hand', cursive, sans-serif;
-  margin: 20px 30px;
-  background: #f9f5f6; /* fondo muy suave rosado grisáceo */
-  color: #5b2c2c; /* burdeos oscuro */
+  font-family: 'Amatic SC', cursive;
+  background-color: #EFD4C4;
+  margin: 20px;
+  color: #4E0714;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 40px;
-  color: #7a3e3e; /* burdeos medio */
-  font-size: 2.8rem;
-  letter-spacing: 1.2px;
-  text-shadow: 1px 1px 2px #b96b6b;
+  color: #781727;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
-body > section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto 60px auto;
-  padding: 0 10px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  box-shadow: 0 0 15px rgba(78, 7, 20, 0.2);
 }
 
-section.semestre {
-  background: #f2e8e8; /* burdeos muy claro / rosa pálido */
-  border: 2.5px dashed #a05151; /* borde burdeos medio */
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 6px 10px rgb(160 81 81 / 0.35);
-  transition: transform 0.3s ease;
+th, td {
+  border: 2px solid #AC5B67;
+  padding: 10px;
+  vertical-align: top;
+  transition: background-color 0.3s ease;
 }
 
-section.semestre:hover {
-  transform: scale(1.04);
-  box-shadow: 0 10px 20px rgb(160 81 81 / 0.55);
+th {
+  background-color: #E283C2;
+  color: white;
+  font-size: 1.5rem;
+  border-bottom: 4px solid #781727;
 }
 
-section.semestre h2 {
-  font-size: 1.7rem;
-  margin-bottom: 15px;
-  color: #8c4040; /* burdeos medio */
-  text-align: center;
-  border-bottom: 2px solid #d79a9a; /* rojo suave */
-  padding-bottom: 6px;
+td {
+  background-color: #FBECEC;
+  color: #4E0714;
+  position: relative;
 }
 
-ul.materias {
-  list-style-type: none;
-  padding-left: 5px;
+ul {
+  padding-left: 20px;
+  list-style-type: square;
 }
 
-ul.materias li {
-  background: #f7e9e9; /* rojo muy suave */
-  border: 2px solid #a15050; /* burdeos */
-  border-radius: 12px;
-  margin-bottom: 12px;
-  padding: 10px 14px;
-  cursor: pointer;
-  color: #6a3a3a; /* burdeos oscuro */
-  font-weight: 600;
-  box-shadow: 3px 3px 0 #8b3f3f;
+td li {
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #EFD4C4;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+td li:nth-child(1) { animation-delay: 0.1s; }
+td li:nth-child(2) { animation-delay: 0.2s; }
+td li:nth-child(3) { animation-delay: 0.3s; }
+td li:nth-child(4) { animation-delay: 0.4s; }
+td li:nth-child(5) { animation-delay: 0.5s; }
+td li:nth-child(6) { animation-delay: 0.6s; }
+td li:nth-child(7) { animation-delay: 0.7s; }
+td li:nth-child(8) { animation-delay: 0.8s; }
+td li:nth-child(9) { animation-delay: 0.9s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover animación */
+td li:hover {
+  background-color: #E283C2;
+  color: white;
+  transform: scale(1.03);
   transition: all 0.3s ease;
-  user-select: none;
 }
 
-ul.materias li.activa:hover {
-  background: #ebd3d3; /* rojo más claro para hover */
-  box-shadow: 4px 4px 0 #7b3a3a;
-  color: #4e2a2a;
-}
+/* Colores personalizados por semestre */
+table td:nth-child(1) { background-color: #FDE9E9; }
+table td:nth-child(2) { background-color: #F8DFDF; }
+table td:nth-child(3) { background-color: #F4D6D6; }
+table td:nth-child(4) { background-color: #F0CCCC; }
+table td:nth-child(5) { background-color: #EBC2C2; }
+table td:nth-child(6) { background-color: #E7B8B8; }
+table td:nth-child(7) { background-color: #E3AEAE; }
+table td:nth-child(8) { background-color: #DEA4A4; }
+table td:nth-child(9) { background-color: #DA9A9A; }
 
-ul.materias li.bloqueada {
-  background-color: #e6dada; /* gris rosado */
-  border-color: #b29b9b;
-  color: #9e8b8b;
-  box-shadow: none;
-  cursor: not-allowed;
-  opacity: 0.6;
-  font-style: italic;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
 
-span.abre {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #a05a5a; /* rojo suave */
-  letter-spacing: 0.8px;
-  user-select: text;
+  th {
+    position: sticky;
+    top: 0;
+    background: #781727;
+    color: white;
+  }
+
+  td {
+    border: none;
+    margin-bottom: 20px;
+  }
 }
